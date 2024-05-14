@@ -1,0 +1,31 @@
+.nav {
+  max-width: 1276px; /* Maximum width of the hero section */
+  margin: 0 auto; /* Center align the container */
+  padding: 20px; /* Add padding inside the container */
+  height: 100px;
+}
+
+.nav-button i {
+  display: none;
+}
+
+.nav-product:hover .absolute {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 20px;
+  }
+  .nav-content li {
+    display: none;
+  }
+  .nav-button i {
+    display: block;
+    font-size: 5vw;
+    color: #ffffff;
+  }
+  .nav-button button {
+    display: none;
+  }
+}

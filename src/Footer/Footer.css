@@ -1,0 +1,6 @@
+.container {
+  max-width: 1276px; /* Maximum width of the hero section */
+  margin: 0 auto; /* Center align the container */
+  padding: 20px; /* Add padding inside the container */
+}
+

@@ -1,0 +1,60 @@
+Home.css
+
+/* Style for the outer container */
+.home-container {
+  height: 100vh;
+  position: relative;
+}
+
+/* Style for the image container */
+.image-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style for the image */
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Override navbar background color to be transparent */
+.navbar-container {
+  background-color: #19191a; /*transparent !important #002244 */
+  height: 100px;
+}
+
+.image-scroll-container {
+  width: 500px;
+  margin: auto;
+  overflow: hidden; /* Hide overflowing content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-scroll {
+  display: flex;
+  width: 100%; /* Set a large width to contain all images */
+  animation: scroll 30s linear infinite; /* Adjust speed and timing */
+}
+
+.image-scroll img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Maintain image aspect ratio */
+  margin: 10px;
+  border: solid rgb(134, 3, 134);
+}
+
+.img-expert {
+  width: 75%;
+  height: 75%;
+}
