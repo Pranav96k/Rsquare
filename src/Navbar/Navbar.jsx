@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="px-8 md:px-auto navbar-container bg-[#19191a]">
+    <div className="px-8 md:px-auto  min-h-24 bg-[#090909]">
       <div className="nav mx-auto md:px-4 flex items-center justify-between flex-wrap md:flex-nowrap">
         <div className="text-white font-bold md:order-1">
           {/* <img className="w-20 h-20" src={logo} alt="" /> */}

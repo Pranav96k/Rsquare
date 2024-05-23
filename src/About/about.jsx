@@ -3,7 +3,6 @@ import "./about.css";
 import Ramesh from "../IMG/ramesh.jpeg";
 import Rajneesh from "../IMG/rajneesh.jpeg";
 
-
 const About = () => {
   return (
     <div>
@@ -23,18 +22,16 @@ const About = () => {
           </div>
         </div>
 
-        <div class="flex mt-8 max-w-3xl items-start justify-center mx-auto">
-          <div class="w-1/2 min-h-[338px] m-4 p-4 bg-[#19191a] rounded-md shadow-md">
-            <span class="text-4xl text-white font-serif font-bold">
-              Vision{" "}
-            </span>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-8 max-w-3xl items-start justify-center mx-auto">
+          <div class=" min-h-80  m-4 p-4 bg-[#19191a] rounded-md shadow-md">
+            <span class="text-4xl text-white font-serif font-bold">Vision</span>
             <p class="text-xl text-white  font-serif mt-4">
               Craft Best-in-class Technology Products and Solutions
             </p>
           </div>
-          <div class="w-1/2 m-4 p-4 bg-[#19191a] rounded-md shadow-md">
+          <div class=" min-h-80 m-4 p-4 bg-[#19191a] rounded-md shadow-md ">
             <span class="text-4xl text-white font-serif font-bold">
-              Mission{" "}
+              Mission
             </span>
             <p class="text-xl text-white  font-serif mt-4">
               Foster local talent and deliver best-in-class technology products
@@ -54,7 +51,7 @@ const About = () => {
           Meet the creative minds behind our success.
         </h4>
 
-        <div className="flex max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl">
           <div className="p-4 m-20 mt-8 items-center text-center">
             <img
               src={Ramesh}

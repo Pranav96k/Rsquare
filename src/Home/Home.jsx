@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import home from "../IMG/Home.jpg";
-import I1 from "../IMG/talkexpert.jpeg";
-import I2 from "../IMG/Project-In-Mind.jpeg";
-import I3 from "../IMG/Why-Choose-Us.jpeg";
 import "./Home.css";
 
 const Home = () => {
@@ -97,66 +94,53 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-20 bg-[#19191A]">
-          <div className="flex flex-row items-center max-w-6xl p-4  rounded-lg">
-            <div className="mr-4">
-              <img src={I1} alt="Expert" className="img-expert rounded-lg" />
-            </div>
+        <div className="flex flex-col items-center justify-center mt-20 bg-[#19191a]">
+          <div className="flex flex-row items-center max-w-6xl p-8 m-4 rounded-lg bg-gray-800 shadow-lg">
             <div>
-              <h2 className="font-bold font-serif text-2xl mt-0 mb-8 text-white">
+              <h2 className="font-bold text-3xl mt-0 mb-4 text-white">
                 Talk to Experts
               </h2>
-              <p className="text-lg font-serif  text-white">
+              <p className="text-lg text-gray-300 mb-4">
                 Unlock the potential of your projects with our team of seasoned
                 professionals. We bring a wealth of expertise in various domains
                 to drive your success. Whether you’re navigating the cloud
                 landscape, delving into artificial intelligence, or working on
                 data analytics, our experts are here to guide you.
               </p>
-              <button className=" font-bold border mt-8 border-pink-300 text-white rounded-lg px-4 py-2 hover:bg-slate-500 hover:text-white hover:border-slate-500 transition duration-300">
+              <button className="font-bold border border-pink-500 text-pink-500 rounded-lg px-6 py-3 hover:bg-pink-500 hover:text-white transition duration-300">
                 Read More
               </button>
             </div>
           </div>
-          <div className="flex flex-row items-center max-w-6xl p-4 bg-[#19191A] rounded-lg">
-            <div className="mr-4">
-              <h2 className="font-bold font-serif text-2xl mt-0 mb-8 text-white">
-                Solve your outsourcing Challenges
+          <div className="flex flex-row items-center max-w-6xl p-8 m-4  bg-gray-800 rounded-lg mt-8 shadow-lg">
+            <div>
+              <h2 className="font-bold text-3xl mt-0 mb-4 text-white">
+                Solve your Outsourcing Challenges
               </h2>
-              <p className="text-lg font-serif text-white">
+              <p className="text-lg text-gray-300 mb-4">
                 At RSquareSoft, we are committed to revolutionizing the
                 outsourcing landscape in India, addressing challenges head-on,
                 and paving the way for unparalleled success. Here’s how we plan
                 to solve outsourcing challenges in the region:
               </p>
-              <button className=" text-white  font-bold border mt-8 border-pink-300 rounded-lg px-4 py-2 hover:bg-slate-500 hover:text-white  hover:border-slate-500 transition duration-300">
+              <button className="font-bold border border-pink-500 text-pink-500 rounded-lg px-6 py-3 hover:bg-pink-500 hover:text-white transition duration-300">
                 Read More
               </button>
             </div>
-            <div className="ml-4">
-              <img
-                src={I3}
-                alt="Expert"
-                className="img-expert p-4 rounded-lg"
-              />
-            </div>
           </div>
-          <div className="flex flex-row items-center max-w-6xl p-4 bg-[#19191A] rounded-lg">
-            <div className="mr-4">
-              <img src={I2} alt="Expert" className="img-expert rounded-lg" />
-            </div>
+          <div className="flex flex-row items-center max-w-6xl p-8 m-4  bg-gray-800 rounded-lg mt-8 shadow-lg">
             <div>
-              <h2 className="font-bold font-serif text-2xl mt-0 mb-8 text-white">
+              <h2 className="font-bold text-3xl mt-0 mb-4 text-white">
                 Have a Project in Mind?
               </h2>
-              <p className="text-lg font-serif text-white">
+              <p className="text-lg text-gray-300 mb-4">
                 Embark on your next software project with confidence, knowing
                 that RSquareSoft is here to transform your ideas into reality.
                 Whether you’re envisioning a groundbreaking application, a
                 scalable cloud solution, or a sophisticated AI-driven system, we
                 have the expertise to make it happen.
               </p>
-              <button className=" text-white  font-bold border mt-8 border-pink-300 rounded-lg px-4 py-2 hover:bg-slate-500 hover:text-white hover:border-slate-500 transition duration-300">
+              <button className="font-bold border border-pink-500 text-pink-500 rounded-lg px-6 py-3 hover:bg-pink-500 hover:text-white transition duration-300">
                 Read More
               </button>
             </div>

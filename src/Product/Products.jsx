@@ -28,13 +28,13 @@ const Products = () => {
     <div>
       <div className="bg-black">
         <div className="max-w-3xl flex flex-col justify-center mx-auto items-center text-center">
-          <h1 className="text-white font-serif text-5xl font-bold mt-4 mb-2 ">
+          <h1 className="text-white font-serif text-5xl font-bold mt-4 mb-2 px-4 pt-4">
             CogniNex Core – Enterprise AI
           </h1>
-          <p className="text-gray-300">
+          <p className="text-gray-300 px-4 pb-4">
             Redefining Possibilities in Enterprise AI
           </p>
-          <p className="text-white mt-8 mb-6">
+          <p className="text-white  mb-6 p-4">
             In the ever-evolving landscape of business, staying ahead requires
             more than just insights—it demands intelligent decision-making
             powered by cutting-edge technology. Meet CogniNex Core, our flagship
@@ -143,7 +143,7 @@ const Products = () => {
               setIsVisible={() => {
                 if (sectionConfig === "F8") setSectionConfig("");
                 else setSectionConfig("F8");
-              }} 
+              }}
             />
           </div>
         </div>
@@ -154,7 +154,7 @@ const Products = () => {
           <h1 className="flex justify-center text-3xl font-semibold mb-6">
             Benefits
           </h1>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex  justify-center gap-6">
             <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg">
               <h2 className="text-xl font-semibold mb-2">
                 Increased Efficiency

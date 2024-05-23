@@ -29,14 +29,14 @@ const Contact = () => {
     <div>
       <div className="bg-black py-8">
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1  gap-8 mb-4 md:grid-cols-2">
+          <div className="grid grid-cols-1  gap-8 mb-4 md:grid-cols-2 items-center text-center">
             <div className="text-white font-serif text-3xl p-4 m-4">
               Transforming Challenges into Opportunities <br />{" "}
-              <span className="text-violet-700 font-bold">
+              <span className="text-violet-700  mt-2 font-bold">
                 Join Our Journey
               </span>
             </div>
-            <form onSubmit={handleSubmit} className=" m-4 p-4">
+            <form onSubmit={handleSubmit} className=" m-4 p-4 text-left">
               <div className="mb-4">
                 <label
                   htmlFor="name"

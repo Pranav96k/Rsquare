@@ -9,6 +9,7 @@ import About from "./About/about";
 import Products from "./Product/Products";
 import Contact from "./Contact/Contact";
 import Services from "./Services/Services";
+import Careers from "./Career/Careers";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/careers",
+        element: <Careers />,
       },
     ],
   },
