@@ -141,7 +141,7 @@ const Home = () => {
                 have the expertise to make it happen.
               </p>
               <button className="font-bold border border-pink-500 text-pink-500 rounded-lg px-6 py-3 hover:bg-pink-500 hover:text-white transition duration-300">
-                Read More
+                Read More 
               </button>
             </div>
           </div>

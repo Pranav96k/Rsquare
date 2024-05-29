@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-react-upload": "^8.0.0",
     "@reduxjs/toolkit": "^2.2.4",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
