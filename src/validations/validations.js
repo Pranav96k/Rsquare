@@ -4,9 +4,11 @@ const emailRegExp = new RegExp(
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+(com|in|gov|ai|org|edu|net)))$/
 );
 
-
 export const schema = yup.object().shape({
-  agreeToPrivacyPolicy: yup.boolean(),
+  agreeToPrivacyPolicy: yup
+    .boolean(true)
+    .oneOf([true], "Please accept the privacy policies")
+    .required("Please accept the privacy policies"),
   firstName: yup
     .string()
     .matches(/^[aA-zZ]+$/, "Only alphabetic characters allowed")
@@ -14,7 +16,7 @@ export const schema = yup.object().shape({
     .required("Please enter correct name"),
   lastName: yup
     .string()
-    .matches(/^[a-z]+$/, "Only alphabetic characters allowed")
+    .matches(/^[aA-zZ]+$/, "Only alphabetic characters allowed")
     .max(20)
     .required("Please enter correct last name"),
   email: yup

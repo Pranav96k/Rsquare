@@ -11,6 +11,8 @@ import Contact from "./Contact/Contact";
 import Services from "./Services/Services";
 import Careers from "./Career/Careers";
 
+import { Outlet } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",

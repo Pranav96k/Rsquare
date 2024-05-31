@@ -98,6 +98,7 @@ const Careers = () => {
         resetForm();
         fileInputRef.current.value = ""; // Clear the file input field
         setIsVerified(false);
+        setIsFileUploaded(false);
         alert("Form submitted successfully!");
       }
     } catch (error) {
@@ -315,12 +316,17 @@ const Careers = () => {
                 />
                 I have read and agree to the Privacy Policy.
               </label>
+              <ErrorMessage
+                name="agreeToPrivacyPolicy"
+                component="p"
+                className="text-red-600"
+              />
               {/* {console.log(values, touched)} */}
-              {!values.agreeToPrivacyPolicy && touched.agreeToPrivacyPolicy ? (
+              {/* {!values.agreeToPrivacyPolicy && touched.agreeToPrivacyPolicy ? (
                 <p className="text-red-600">
                   Please agree the privacy policies
                 </p>
-              ) : null}
+              ) : null} */}
             </div>
 
             {/* Message */}
