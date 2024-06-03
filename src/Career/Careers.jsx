@@ -127,120 +127,120 @@ const Careers = () => {
         onSubmit={handleSubmit}
       >
         {({ isSubmitting, setFieldValue, values, touched }) => (
-          <Form className="m-4 p-4">
-            <div className="grid grid-cols-1 max-w-6xl mx-auto md:grid-cols-2 gap-4 mb-4">
+          <Form className="max-w-5xl mx-auto m-4 mt-0 p-4">
+            <div className="grid grid-cols-1  md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label
                   htmlFor="firstName"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black font-semibold mb-1"
                 >
-                  First Name
+                  First Name <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="text"
                   id="firstName"
                   name="firstName"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="firstName"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="lastName"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Last Name
+                  Last Name <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="text"
                   id="lastName"
                   name="lastName"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="lastName"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Email
+                  Email <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="email"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="mobile"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Mobile
+                  Mobile <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="tel"
                   id="mobile"
                   name="mobile"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="mobile"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="linkedin"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  LinkedIn Profile URL / Resume URL
+                  LinkedIn Profile URL <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="text"
                   id="linkedin"
                   name="linkedin"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="linkedin"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="jobRole"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Job Role / Position
+                  Job Role / Position <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   as="select"
                   id="jobRole"
                   name="jobRole"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                   value={selectedJobRole ? selectedJobRole.id : ""}
                   onChange={(e) => handleJobRoleChange(e, setFieldValue)}
                 >
@@ -254,42 +254,42 @@ const Careers = () => {
                 <ErrorMessage
                   name="jobRole"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="currentCTC"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Current CTC (LPA)
+                  Current CTC (LPA) <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   type="text"
                   id="currentCTC"
                   name="currentCTC"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <ErrorMessage
                   name="currentCTC"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="noticePeriod"
-                  className="block text-black text-xl font-serif font-semibold mb-1"
+                  className="block text-black  font-semibold mb-1"
                 >
-                  Notice Period
+                  Notice Period <span className="text-red-500 ">*</span>
                 </label>
                 <Field
                   as="select"
                   id="noticePeriod"
                   name="noticePeriod"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 text-md"
                 >
                   <option value="">Select your option</option>
                   <option value="Immediate">Immediate</option>
@@ -301,14 +301,14 @@ const Careers = () => {
                 <ErrorMessage
                   name="noticePeriod"
                   component="p"
-                  className="text-red-600"
+                  className="text-red-600 text-sm"
                 />
               </div>
             </div>
 
             {/* Agree to Privacy Policy */}
             <div className="mb-4 max-w-6xl mx-auto">
-              <label className="block text-black text-xl font-serif font-semibold">
+              <label className="block text-black  font-semibold">
                 <Field
                   type="checkbox"
                   name="agreeToPrivacyPolicy"
@@ -319,7 +319,7 @@ const Careers = () => {
               <ErrorMessage
                 name="agreeToPrivacyPolicy"
                 component="p"
-                className="text-red-600"
+                className="text-red-600 text-sm"
               />
               {/* {console.log(values, touched)} */}
               {/* {!values.agreeToPrivacyPolicy && touched.agreeToPrivacyPolicy ? (
@@ -329,11 +329,11 @@ const Careers = () => {
               ) : null} */}
             </div>
 
-            {/* Message */}
+            
             <div className="mb-4 max-w-6xl mx-auto">
               <label
                 htmlFor="message"
-                className="block text-black text-xl font-serif font-semibold mb-1"
+                className="block text-black  font-semibold mb-1"
               >
                 Message
               </label>
@@ -341,19 +341,19 @@ const Careers = () => {
                 as="textarea"
                 id="message"
                 name="message"
-                rows="4"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                rows="2"
+                className="w-full  py-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
               ></Field>
               <ErrorMessage
                 name="message"
                 component="p"
-                className="text-red-600"
+                className="text-red-600 text-sm"
               />
             </div>
 
-            <div className="grid max-w-6xl mx-auto grid-cols-1 gap-4 md:grid-cols-2 m-8 text-black text-xl font-serif font-semibold">
+            <div className="grid  grid-cols-1 gap-4 md:grid-cols-2 m-4 text-black  font-semibold">
               <div>
-                <span className="text-black text-xl font-serif font-semibold m-2">
+                <span className="text-black  font-semibold m-2">
                   Upload Resume
                 </span>
               </div>
@@ -370,17 +370,17 @@ const Careers = () => {
               <button
                 type="button"
                 onClick={handleFileUpload}
-                className="bg-green-200 m-4 p-2 rounded-md shadow-lg"
+                className="bg-green-200 m-3 p-1 rounded-md shadow-lg"
                 disabled={isFileUploaded}
               >
                 Upload
               </button>
               {uploadStatus && (
-                <p className="text-violet-600 mb-4">{uploadStatus}</p>
+                <p className="text-red-500 mb-4 text-sm">{uploadStatus}</p>
               )}
             </div>
 
-            <div className=" flex justify-center text-center max-w-xl mx-auto mb-6 mt-3 ">
+            <div className=" flex justify-center text-center max-w-md mx-auto mb-6 mt-3 ">
               <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                 onChange={handleCaptcha}
