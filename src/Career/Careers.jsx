@@ -4,7 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useRef, useState } from "react";
 import jobRoles from "../Utils/jobRole";
 import { schema } from "../validations/validations";
-// import { Upload } from "@progress/kendo-react-upload";
 
 const Careers = () => {
   const [selectedJobRole, setSelectedJobRole] = useState({});
@@ -18,7 +17,6 @@ const Careers = () => {
   const handleFileUpload = async () => {
     const file = fileInputRef.current.files[0];
     if (!file) {
-      // console.log("No file selected");
       setUploadStatus("No file selected");
       return;
     }
@@ -125,8 +123,9 @@ const Careers = () => {
         }}
         validationSchema={schema}
         onSubmit={handleSubmit}
+        validateOnMount={true}
       >
-        {({ isSubmitting, setFieldValue, values, touched }) => (
+        {({ isSubmitting, setFieldValue, values, touched, isValid }) => (
           <Form className="max-w-5xl mx-auto m-4 mt-0 p-4">
             <div className="grid grid-cols-1  md:grid-cols-2 gap-4 mb-4">
               <div>
@@ -321,15 +320,8 @@ const Careers = () => {
                 component="p"
                 className="text-red-600 text-sm"
               />
-              {/* {console.log(values, touched)} */}
-              {/* {!values.agreeToPrivacyPolicy && touched.agreeToPrivacyPolicy ? (
-                <p className="text-red-600">
-                  Please agree the privacy policies
-                </p>
-              ) : null} */}
             </div>
 
-            
             <div className="mb-4 max-w-6xl mx-auto">
               <label
                 htmlFor="message"
@@ -370,8 +362,12 @@ const Careers = () => {
               <button
                 type="button"
                 onClick={handleFileUpload}
-                className="bg-green-200 m-3 p-1 rounded-md shadow-lg"
-                disabled={isFileUploaded}
+                className={`m-3 p-1 rounded-md shadow-lg ${
+                  isValid
+                    ? "bg-green-500 hover:bg-green-600"
+                    : "bg-green-200 cursor-not-allowed"
+                }`}
+                disabled={!isValid || isFileUploaded}
               >
                 Upload
               </button>
